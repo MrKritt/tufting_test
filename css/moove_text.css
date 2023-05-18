@@ -1,0 +1,33 @@
+.hero {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .animated-text {
+	display: flex;
+	white-space: nowrap;
+	font-size: 3rem;
+	position: absolute;
+	bottom: 2rem;
+	animation: marquee 20s linear infinite;
+  }
+  
+  .moving-text {
+	padding-right: 4rem;
+  }
+  
+  @keyframes marquee {
+	0% {
+	  transform: translateX(90%);
+	}
+	100% {
+	  transform: translateX(-50%);
+	}
+  }
+  
